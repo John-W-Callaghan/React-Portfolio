@@ -262,3 +262,93 @@ body {
 .skill-box.active .arrow {
   transform: rotate(180deg);
 }
+
+.projects-section {
+  padding: 100px 10% 60px;
+  background: #f7f8fc;
+  text-align: center;
+}
+
+.carousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  margin: 3rem 0;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.project-slide {
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+.project-slide img {
+  width: 300px;
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+.project-details {
+  max-width: 400px;
+  text-align: left;
+}
+
+.project-details h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-details p {
+  color: #444;
+  margin-bottom: 0.5rem;
+}
+
+.project-details .meta {
+  color: #777;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  padding: 10px 20px;
+  background: #5a31f4;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #4725b4;
+}
+
+.btn.outline {
+  background: transparent;
+  border: 2px solid #5a31f4;
+  color: #5a31f4;
+}
+
+.nav {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #5a31f4;
+  padding: 1rem;
+}
+
+.all-projects {
+  margin-top: 2rem;
+  display: inline-block;
+}
