@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- 🔝 Navbar -->
+  <nav class="navbar">
+    <div class="logo">Portfolio</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- 👋 Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="hero-text">
+      <h1>Hi, I'm John</h1>
+      <p> 20 | Data Science | Software Engineering | AI</p>
+      <a href="#contact" class="btn">Contact ➤</a>
+    </div>
+    <div class="hero-image">
+      <img src="Assets/profile.png" alt="Your profile" />
+    </div>
+  </section>
+
+  <!-- More Sections Below -->
+  <section id="about" class="about-section">
+  <h2 class="section-title">About</h2>
+  <p class="section-subtitle">My Introduction</p>
+
+  <div class="about-content">
+    <div class="about-image">
+      <img src="Assets/about-photo.jpg" alt="Profile Photo" />
+    </div>
+
+    <div class="about-text">
+      <p>
+        With 4+ years of experience in AI, I design, develop, and deploy cutting-edge software and AI solutions, specializing in MedTech and beyond. I’ve led cross-functional teams, translating business goals into actionable Data & AI strategies that deliver results. Skilled in Python, C++, Java, and deep learning frameworks, I build scalable, high-performance systems. If you’re looking for someone to drive impactful projects, let’s connect!
+      </p>
+
+      <div class="about-stats">
+        <div><strong>04+</strong><br><span>Years XP</span></div>
+        <div><strong>23+</strong><br><span>Projects</span></div>
+        <div><strong>03+</strong><br><span>Companies</span></div>
+      </div>
+
+      <a href="#contact" class="btn secondary">Leave a message ⟳</a>
+    </div>
+  </div>
+</section>
+
+
+
+<section id="experience" class="experience-section">
+  <h2 class="section-title">Experience</h2>
+  <p class="section-subtitle">My journey in the academic & professional front</p>
+
+  <!-- Toggle Buttons -->
+  <div class="experience-toggle">
+    <button id="academicBtn" class="toggle-btn active">🎓 Academic</button>
+    <button id="professionalBtn" class="toggle-btn">💼 Professional</button>
+  </div>
+
+  <!-- Academic Timeline -->
+  <div id="academicTimeline" class="timeline show">
+    <div class="timeline-item left">
+      <h3>Artificial Intelligence Engineer</h3>
+      <p>DCKAP</p>
+      <span>📅 Aug 2020 – Dec 2020</span>
+    </div>
+    <div class="timeline-item left">
+      <h3>Research Intern</h3>
+      <p>University of XYZ</p>
+      <span>📅 Jan 2020 – Jul 2020</span>
+    </div>
+  </div>
+
+  <!-- Professional Timeline -->
+  <div id="professionalTimeline" class="timeline">
+    <div class="timeline-item right">
+      <h3>Lead MLE & Data Scientist</h3>
+      <p>BrainSightAI</p>
+      <span>📅 Jul 2023 – Present</span>
+    </div>
+    <div class="timeline-item right">
+      <h3>Senior MLE & Data Scientist</h3>
+      <p>BrainSightAI</p>
+      <span>📅 May 2022 – Jul 2023</span>
+    </div>
+    <div class="timeline-item right">
+      <h3>Machine Learning Engineer</h3>
+      <p>BrainSightAI</p>
+      <span>📅 Aug 2021 – May 2022</span>
+    </div>
+    <div class="timeline-item right">
+      <h3>Programmer Analyst Trainee</h3>
+      <p>Cognizant</p>
+      <span>📅 Jan 2021 – Jul 2021</span>
+    </div>
+  </div>
+</section>
+
+
+<section id="skills" class="skills-section">
+  <h2 class="section-title">Skills</h2>
+  <p class="section-subtitle">My technical & other skills</p>
+
+  <div class="skills-grid">
+    <div class="skill-box" onclick="toggleSkill(this)">
+      <div class="skill-header">
+        <span class="icon">🧠</span>
+        <div>
+          <h3>Data Science & AI</h3>
+          <p>4+ Years XP</p>
+        </div>
+        <span class="arrow">▾</span>
+      </div>
+      <ul class="skill-list">
+        <li>Python</li>
+        <li>TensorFlow / PyTorch</li>
+        <li>Scikit-learn</li>
+        <li>Computer Vision</li>
+      </ul>
+    </div>
+
+    <div class="skill-box" onclick="toggleSkill(this)">
+      <div class="skill-header">
+        <span class="icon">🎨</span>
+        <div>
+          <h3>Front End</h3>
+          <p>2+ Years XP</p>
+        </div>
+        <span class="arrow">▾</span>
+      </div>
+      <ul class="skill-list">
+        <li>HTML / CSS / JS</li>
+        <li>React / Vite</li>
+        <li>Tailwind</li>
+        <li>Animations (AOS, GSAP)</li>
+      </ul>
+    </div>
+
+    <!-- Add more skill-boxes similarly... -->
+  </div>
+</section>
+
+  <section id="projects">...</section>
+  <section id="contact">...</section>
+
+  <script>
+    // Optional: Smooth Scroll Behavior
+    document.querySelectorAll('a[href^=\"#\"]').forEach(link => {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+  <script>
+  function toggleSkill(box) {
+    box.classList.toggle('active');
+  }
+</script>
+
+</body>
+</html>
