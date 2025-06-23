@@ -10,17 +10,17 @@
 
   <!-- 🔝 Navbar -->
   <nav class="navbar">
-    <div class="logo">Portfolio</div>
-    <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
+  <div class="logo">Portfolio</div>
+  <button class="hamburger" id="hamburger">&#9776;</button>
+    <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
-
   <!-- 👋 Hero Section -->
   <section id="home" class="hero-section">
     <div class="hero-text">
@@ -40,18 +40,17 @@
 
     <div class="about-content">
         <div class="about-image">
-        <img src="Assets/about-photo.jpg" alt="Profile Photo" />
+        <img src="Assets/img2.png" alt="Profile Photo" />
         </div>
 
         <div class="about-text">
         <p>
-            With 4+ years of experience in AI, I design, develop, and deploy cutting-edge software and AI solutions, specializing in MedTech and beyond. I’ve led cross-functional teams, translating business goals into actionable Data & AI strategies that deliver results. Skilled in Python, C++, Java, and deep learning frameworks, I build scalable, high-performance systems. If you’re looking for someone to drive impactful projects, let’s connect!
-        </p>
+            I'm a recent BSc Computing Sciences graduate from the University of East Anglia and have now entered my fourth year, pursuing a Master's in Artificial Intelligence. I’m passionate about Data Science and AI, and I’m continuously building on my foundation in Python, C++, and data-driven technologies. Through hands-on learning and real-world projects, I aim to contribute to impactful, intelligent solutions that harness the full potential of AI and analytics.
 
         <div class="about-stats">
-            <div><strong>04+</strong><br><span>Years XP</span></div>
-            <div><strong>23+</strong><br><span>Projects</span></div>
-            <div><strong>03+</strong><br><span>Companies</span></div>
+            <div><strong>4th</strong><br><span>Year Studying</span></div>
+            <div><strong>20+</strong><br><span>Projects Completed</span></div>
+            <div><strong>8+</strong><br><span>Years Coding</span></div>
         </div>
 
         <a href="#contact" class="btn secondary">Leave a message ⟳</a>
@@ -71,45 +70,57 @@
         <button id="professionalBtn" class="toggle-btn">💼 Professional</button>
     </div>
 
-    <!-- Academic Timeline -->
+        <!-- Academic Timeline -->
     <div id="academicTimeline" class="timeline show">
-        <div class="timeline-item left">
-        <h3>Artificial Intelligence Engineer</h3>
-        <p>DCKAP</p>
-        <span>📅 Aug 2020 – Dec 2020</span>
-        </div>
-        <div class="timeline-item left">
-        <h3>Research Intern</h3>
-        <p>University of XYZ</p>
-        <span>📅 Jan 2020 – Jul 2020</span>
-        </div>
+
+     <!-- MSc AI at UEA -->
+    <div class="timeline-item left">
+        <h3>University of East Anglia</h3>
+        <p>MSc Artificial Intelligence</p>
+        <span>📅 Sep 2025 – Sep 2026 (Expected)</span>
+        <p>Pursuing a Master's degree in AI, focused on advanced machine learning, ethical AI, and real-world applications across healthcare, finance, and automation.</p>
+        <p><strong>Planned Areas of Study:</strong> Deep Learning, NLP, Reinforcement Learning, AI Ethics, Advanced Data Analytics</p>
+        <p><strong>Goals:</strong> Research driven learning, industrial placement, and building high-impact AI systems.</p>
+    </div>    
+    <!-- UEA Section -->
+    <div class="timeline-item left">
+        <h3>University of East Anglia</h3>
+        <p>BSc Hons Computing Sciences with a Year in Industry</p>
+        <span>📅 2022 – Jun 2025</span>
+        <p><strong>Activities:</strong> Basketball, Swimming & Water Polo</p>
+        <p><strong>Skills:</strong> Software Development, Project Management, Programming, Web Development, Computer Science, Mathematics</p>
+    </div>
+
+    <!-- AUB Certification -->
+    <div class="timeline-item left">
+        <h3>American University of Beirut (AUB)</h3>
+        <p>3-Credit Course Recognition – Data Science</p>
+        <span>📅 Jan 2024 – Feb 2024</span>
+        <p>Completed a Data Science learning path equivalent to a 3-credit graduate-level course at AUB.</p>
+        <p><strong>Skills:</strong> Data Science, Analytics, Statistical Analysis, Mathematics</p>
+    </div>
+
+    <!-- Sixth Form -->
+    <div class="timeline-item left">
+        <h3>Hinchley Wood Sixth Form</h3>
+        <p>A Levels: Business, Computer Science, Physics</p>
+        <span>📅 Sep 2020 – Jun 2022</span>
+    </div>
+
     </div>
 
     <!-- Professional Timeline -->
-    <div id="professionalTimeline" class="timeline">
-        <div class="timeline-item right">
-        <h3>Lead MLE & Data Scientist</h3>
-        <p>BrainSightAI</p>
-        <span>📅 Jul 2023 – Present</span>
-        </div>
-        <div class="timeline-item right">
-        <h3>Senior MLE & Data Scientist</h3>
-        <p>BrainSightAI</p>
-        <span>📅 May 2022 – Jul 2023</span>
-        </div>
-        <div class="timeline-item right">
-        <h3>Machine Learning Engineer</h3>
-        <p>BrainSightAI</p>
-        <span>📅 Aug 2021 – May 2022</span>
-        </div>
-        <div class="timeline-item right">
-        <h3>Programmer Analyst Trainee</h3>
-        <p>Cognizant</p>
-        <span>📅 Jan 2021 – Jul 2021</span>
-        </div>
+    <div id="professionalTimeline" class="timeline show">
+    <div class="timeline-item right">
+        <h3>Interactive Segmentation Tool Developer (Intern)</h3>
+        <p>University of East Anglia — School of Computing Sciences</p>
+        <span>📅 Summer 2023</span>
+        <p style="margin-top: 0.5rem;">
+        Contributed to an EPSRC research project building a semi-automated GUI for labeling medical X-ray image segmentation data using pre-trained deep learning models.
+        Enhanced skills in Python, computer vision, and model adaptation. Developed an interactive interface and validated segmentation outputs for research-grade accuracy.
+        </p>
     </div>
-    </section>
-
+    </div>
 
     <section id="skills" class="skills-section">
     <h2 class="section-title">Skills</h2>
@@ -168,19 +179,51 @@
 
         <div class="carousel-track" id="carouselTrack">
         <div class="project-slide">
-            <img src="Assets/project1.png" alt="Neural Black" />
+            <img src="Assets/search-engine.png" alt="Video Game Search Engine" />
             <div class="project-details">
-            <h3>Neural Black – AI for Brain Tumor</h3>
-            <p>
-                Neural Black is a complete brain tumor detection & classification
-                system using CNNs.
-            </p>
-            <div class="meta">
-                ⭐ 131 • <a href="https://github.com/your/repo1" target="_blank">GitHub</a>
+                <h3>Video Game Search Engine</h3>
+                <p>
+                A custom search engine built for video game HTML datasets using TF-IDF and cosine similarity. The project includes query expansion with WordNet, tokenization, lemmatization, and a search interface that returns the most relevant results.
+                </p>
+                <div class="meta">
+                ⭐ 100+ • <a href="https://github.com/your/video-search-engine" target="_blank">GitHub</a>
+                </div>
+                <a href="Projects/project1.html" class="btn">View →</a>
             </div>
-            <a href="project-page.html" class="btn">View →</a>
+            </div>
+        <div class="project-slide">
+            <img src="Assets/emotion-predictor.png" alt="Emotion Prediction App" />
+            <div class="project-details">
+                <h3>Emotion Prediction from Text</h3>
+                <p>
+                Built an NLP model with logistic regression to classify emotions like joy, sadness, and anger. Includes data preprocessing, CountVectorizer feature extraction, and a Tkinter GUI that displays real-time predictions.
+                </p>
+                <div class="meta">
+                ⭐ 120+ • <a href="https://github.com/your/emotion-predictor" target="_blank">GitHub</a>
+                </div>
+                <a href="Projects/project2.html" class="btn">View →</a>
             </div>
         </div>
+        <div class="project-slide">
+            <img src="Assets/codecamp-preview.png" alt="FreeCodeCamp Projects" />
+            <div class="project-details">
+                <h3>FreeCodeCamp Project Collection</h3>
+                <p>
+                A series of five Python projects showcasing practical programming skills:
+                <br><br>
+                🔹 <strong>Arithmetic Formatter</strong>: Aligns and formats math problems with validation.<br>
+                🔹 <strong>Budget App</strong>: Tracks spending and visualizes it via ASCII charts.<br>
+                🔹 <strong>Polygon Area Calculator</strong>: Uses OOP to model and compute geometric shapes.<br>
+                🔹 <strong>Probability Calculator</strong>: Simulates drawing balls from a hat to estimate probability.<br>
+                🔹 <strong>Time Calculator</strong>: Adds time with support for AM/PM and day transitions.
+                </p>
+                <div class="meta">
+                ⭐ 95+ • <a href="https://github.com/John-W-Callaghan/Portfolio" target="_blank">GitHub</a>
+                </div>
+                <a href="Projects/project16.html" class="btn">View →</a>
+            </div>
+        </div>
+
 
         <!-- Copy the above div to add more slides -->
         </div>
@@ -191,7 +234,30 @@
     <a href="project-page.html" class="btn outline all-projects">See All Projects</a>
     </section>
 
-  <section id="contact">...</section>
+  <section id="contact" class="contact-section">
+  <h2 class="section-title">Contact</h2>
+  <p class="section-subtitle">Get in touch with me</p>
+
+  <div class="contact-container">
+    <div class="contact-item">
+      <span class="icon">📧</span>
+      <div>
+        <h3>Email</h3>
+        <p>john.callaghan@example.com</p>
+      </div>
+    </div>
+
+    <div class="contact-item">
+      <span class="icon">📍</span>
+      <div>
+        <h3>Location</h3>
+        <p>Belfast, Northern Ireland</p>
+      </div>
+    </div>
+
+
+  </div>
+</section>
 
   <script>
     // Optional: Smooth Scroll Behavior
@@ -209,6 +275,84 @@
     box.classList.toggle('active');
   }
 </script>
+<script>
+  let currentSlide = 0;
+  const track = document.getElementById("carouselTrack");
+  const totalSlides = track.children.length;
+
+  function updateCarousel() {
+    const slideWidth = track.children[0].offsetWidth;
+    track.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+  }
+
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % totalSlides;
+    updateCarousel();
+  }
+
+  function prevSlide() {
+    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+    updateCarousel();
+  }
+
+  window.addEventListener("resize", updateCarousel);
+</script>
+<script>
+
+const academicBtn = document.getElementById('academicBtn');
+const professionalBtn = document.getElementById('professionalBtn');
+const academicTimeline = document.getElementById('academicTimeline');
+const professionalTimeline = document.getElementById('professionalTimeline');
+
+academicBtn.addEventListener('click', () => {
+  academicBtn.classList.add('active');
+  professionalBtn.classList.remove('active');
+  academicTimeline.classList.add('show');
+  professionalTimeline.classList.remove('show');
+});
+
+professionalBtn.addEventListener('click', () => {
+  professionalBtn.classList.add('active');
+  academicBtn.classList.remove('active');
+  professionalTimeline.classList.add('show');
+  academicTimeline.classList.remove('show');
+});
+</script>
+<script>
+
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('navLinks');
+
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('open');
+});
+</script>
+
+<footer class="site-footer">
+  <div class="footer-content">
+    <h2 class="footer-logo">John</h2>
+
+    <nav class="footer-nav">
+      <a href="#research">Research</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="social-icons">
+      <a href="https://github.com/John-W-Callaghan" target="_blank" aria-label="GitHub">
+        <img src="Assets/github.svg" alt="GitHub" />
+      </a>
+      <a href="https://www.linkedin.com/in/john-callaghan-35816b269" target="_blank" aria-label="LinkedIn">
+        <img src="Assets/linkedin.svg" alt="LinkedIn" />
+      </a>
+    </div>
+  </div>
+
+  <p class="footer-copy">© John Callaghan 2025</p>
+
+  <a href="#home" class="scroll-top" aria-label="Scroll to top">↑</a>
+</footer>
+
 
 </body>
 </html>
