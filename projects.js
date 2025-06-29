@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
             image: 'assets/OCRODIA.png',
             description: `<p>This dissertation project focused on building a high-accuracy OCR system for the low-resource Odia script. The core challenge was the severe lack of available data.</p><p>By implementing a Convolutional Neural Network (CNN) and leveraging Transfer Learning from a pre-trained Bengali model, the system overcame data scarcity. A custom GUI was also developed to augment the dataset, which was crucial in boosting the final test accuracy to <strong>84.0%</strong>.</p>`,
             technologies: ['Python', 'TensorFlow', 'Keras', 'Tkinter', 'Deep Learning', 'Pandas'],
-            github: 'https://github.com/John-W-Callaghan/Odia-OCR-Project'
+            github: 'https://github.com/John-W-Callaghan/OCRODIA'
         },
         // In your projectData object, replace the old 'chatbot' entry with these two:
 
@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
             image: 'assets/train.png',
             description: `<p>A group project to build a conversational AI for a train company. The chatbot helps users find the cheapest tickets by scraping the National Rail website and predicts train delays using a machine learning model.</p><p>The final Random Forest model achieved a Mean Absolute Error of just <strong>0.34 minutes</strong>, providing highly accurate real-time delay estimates.</p>`,
             technologies: ['Python', 'Scikit-learn', 'Selenium', 'spaCy', 'Tkinter', 'SQLite'],
-            github: 'https://github.com/John-W-Callaghan/Train-Chatbot' // GitHub link
+            github: 'https://github.com/BabaRootsMg/AI-CW2-Developing-An-Intelligent-Chatbot-System' // GitHub link
         },
         'chatbot-report': {
             title: 'Intelligent Chatbot for Train Services',
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
             image: 'assets/emotionpred.png',
             description: `<p>This project uses Natural Language Processing (NLP) to predict emotions from text. A user interface was built for emotion prediction using logistic regression.</p><p>The process involved tokenization, vectorization with CountVectorizer, training a Logistic Regression model, and building an interactive GUI with Tkinter to show real-time predictions.</p>`,
             technologies: ['Python', 'Scikit-learn', 'NLTK', 'Tkinter', 'NLP'],
-            github: 'https://github.com/John-W-Callaghan/Emotion-Predictor'
+            github: 'https://github.com/John-W-Callaghan/Emotions_predictor'
         },
         'search-engine': {
             title: 'Video Game Search Engine',
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
             image: 'assets/securewebbased.png',
             description: `<p>Developed a full-stack blog application with a strong focus on security. The project required implementing defensive coding practices to protect against the top 5 most common web vulnerabilities.</p><p>Mitigations for SQL Injection, Cross-Site Scripting (XSS), Cross-Site Request Forgery (CSRF), session hijacking, and account enumeration were successfully implemented and demonstrated.</p>`,
             technologies: ['Node.js', 'PostgreSQL', 'JavaScript', 'Cybersecurity'],
-            github: 'https://github.com/John-W-Callaghan/Secure-Blog'
+            github: 'https://github.com/BabaRootsMg/DSS-UG-002'
         },
         'parking-system': {
             title: 'Parking Management System',
