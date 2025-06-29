@@ -1,0 +1,458 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+/* --- Root Variables from Main Portfolio --- */
+:root {
+    --primary-color: #6366f1;
+    --primary-dark: #4f46e5;
+    --secondary-color: #764ba2;
+    --text-primary: #1a1a1a;
+    --text-secondary: #4b5563;
+    --text-light: #6b7280;
+    --bg-white: #ffffff;
+    --bg-light: #f8fafc;
+    --bg-lighter: #f1f5f9;
+    --border-light: #e2e8f0;
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+    --border-radius-md: 12px;
+    --border-radius-lg: 16px;
+    --transition-normal: 0.3s ease;
+}
+
+/* --- General Body and Font Styling --- */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-light);
+    color: var(--text-primary);
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* --- Main Site Navbar (Corrected) --- */
+.navbar {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: var(--shadow-md);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* This makes the list items arrange in a row */
+    align-items: center; /* This vertically aligns all items in the middle */
+    gap: 1.5rem;
+}
+
+/* This rule is to ensure list items behave correctly as flex items */
+.nav-links li {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-secondary);
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius-md);
+    transition: all var(--transition-normal);
+    display: block; /* Ensures padding is applied correctly */
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: var(--primary-color);
+    background-color: rgba(99, 102, 241, 0.1);
+}
+
+.hamburger {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--text-secondary);
+}
+
+/* --- Page Title Banner --- */
+.page-title-banner {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: var(--bg-white);
+    text-align: center;
+    padding: 4rem 5% 3rem;
+}
+
+.page-title-banner h1 {
+    font-size: 2.8rem;
+    font-family: 'JetBrains Mono', monospace;
+    margin: 0;
+}
+
+.page-title-banner p {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.8);
+    max-width: 600px;
+    margin: 0.5rem auto 0;
+}
+
+/* --- Search Container --- */
+.search-container {
+    padding: 2rem 5%;
+    text-align: center;
+    background: var(--bg-lighter);
+    border-bottom: 1px solid var(--border-light);
+}
+
+#searchBar {
+    width: 100%;
+    max-width: 600px;
+    padding: 1rem 1.5rem;
+    border: 1px solid var(--border-light);
+    border-radius: var(--border-radius-lg);
+    font-size: 1rem;
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-normal);
+}
+
+#searchBar:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.2);
+}
+
+/* --- Main Project Section Container --- */
+.projects-grid-container {
+    padding: 3rem 5% 4rem;
+}
+
+/* --- Project Accordion Styles --- */
+.project-accordion {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.accordion-item {
+    background-color: var(--bg-white);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--border-light);
+    overflow: hidden;
+}
+
+.accordion-header {
+    width: 100%;
+    padding: 1.5rem 2rem;
+    background-color: var(--bg-white);
+    border: none;
+    text-align: left;
+    font-size: 1.25rem;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    color: var(--text-primary);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color var(--transition-normal);
+}
+
+.accordion-header:hover {
+    background-color: var(--bg-lighter);
+}
+
+.accordion-icon {
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+    color: var(--primary-color);
+}
+
+.accordion-header.active .accordion-icon {
+    transform: rotate(180deg);
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+    background-color: var(--bg-lighter);
+    border-top: 1px solid var(--border-light);
+}
+
+/* --- Project Card Grid (inside accordion) --- */
+.project-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+.project-card {
+    background-color: var(--bg-white);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    flex-direction: column;
+    transition: all var(--transition-normal);
+    border: 1px solid var(--border-light);
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.project-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-top-left-radius: var(--border-radius-lg);
+    border-top-right-radius: var(--border-radius-lg);
+}
+
+.project-card h3 {
+    font-size: 1.15rem;
+    color: var(--text-primary);
+    padding: 1rem 1rem 0.5rem;
+    margin: 0;
+}
+
+.project-card p {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    padding: 0 1rem 1rem;
+    flex-grow: 1;
+    margin: 0;
+}
+
+.project-card .btn {
+    display: block;
+    width: fit-content;
+    margin: 0 1rem 1rem auto;
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: var(--border-radius-md);
+    font-weight: 500;
+    text-align: center;
+}
+
+.project-card .btn:hover {
+    background-color: var(--primary-dark);
+}
+
+/* --- Main Site Footer --- */
+.site-footer {
+    padding: 4rem 10% 2rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    position: relative;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.footer-logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--bg-white);
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 500;
+    transition: color var(--transition-normal);
+}
+
+.footer-nav a:hover {
+    color: var(--bg-white);
+}
+
+.social-icons {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.social-icons a:hover {
+    transform: translateY(-5px);
+}
+
+.social-icons img {
+    width: 28px;
+    height: 28px;
+    filter: brightness(0) invert(1); /* Makes icons white for the dark footer */
+}
+
+.footer-copy {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.9rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 1rem 5%;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        gap: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height var(--transition-normal);
+        box-shadow: var(--shadow-lg);
+    }
+    
+    .nav-links.open {
+        max-height: 500px;
+        padding: 1rem 0;
+    }
+
+    .nav-links a {
+        padding: 1rem 2rem;
+        width: 100%;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .page-title-banner h1 {
+        font-size: 2rem;
+    }
+    
+    .project-card-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* --- Add this to the end of your projects.css file --- */
+
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.6); /* Black w/ opacity */
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.modal-content {
+    background-color: var(--bg-white);
+    margin: 10% auto;
+    padding: 2rem;
+    border: 1px solid var(--border-light);
+    width: 90%;
+    max-width: 800px;
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-xl);
+    position: relative;
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.modal-close-button {
+    color: var(--text-light);
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color var(--transition-normal);
+}
+
+.modal-close-button:hover {
+    color: var(--text-primary);
+}
+
+.modal-project-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: var(--border-radius-md);
+    margin-bottom: 1.5rem;
+}
+
+#modalTitle {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+#modalDescription p, #modalDescription li {
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+#modalTech {
+    margin: 1.5rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+#modalTech span {
+    background-color: var(--bg-lighter);
+    color: var(--primary-dark);
+    padding: 0.25rem 0.75rem;
+    border-radius: var(--border-radius-md);
+    font-size: 0.9rem;
+    font-weight: 500;
+}

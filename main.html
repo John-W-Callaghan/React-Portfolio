@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>John Callaghan - Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Portfolio</div>
+    <button class="hamburger" id="hamburger">☰</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="hero-text">
+      <h1>Hi, I'm John</h1>
+      <p class="subtitle">Data Science • Software Engineering • AI</p>
+      <p class="description">Passionate 4th-year student pursuing a Master's in Artificial Intelligence, building intelligent solutions that harness the full potential of AI and analytics.</p>
+      <div class="hero-buttons">
+        <a href="#contact" class="btn">Get In Touch 🚀</a>
+        <a href="#projects" class="btn secondary">View My Work</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="assets/profile.png" alt="John's profile" />
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <h2 class="section-title">About</h2>
+    <p class="section-subtitle">My Introduction</p>
+
+    <div class="about-content">
+      <div class="about-image">
+        <img src="assets/img2.png" alt="Profile Photo" />
+      </div>
+
+      <div class="about-text">
+        <p>
+          I'm a recent BSc Computing Sciences graduate from the University of East Anglia and have now entered my fourth year, pursuing a Master's in Artificial Intelligence. I'm passionate about Data Science and AI, and I'm continuously building on my foundation in Python, C++, and data-driven technologies.
+        </p>
+        
+        <p>
+          Through hands-on learning and real-world projects, I aim to contribute to impactful, intelligent solutions that harness the full potential of AI and analytics.
+        </p>
+
+        <div class="about-stats">
+          <div><strong>4th</strong><span>Year Studying</span></div>
+          <div><strong>20+</strong><span>Projects Completed</span></div>
+          <div><strong>8+</strong><span>Years Coding</span></div>
+        </div>
+
+        <a href="#contact" class="btn">Leave a message 💬</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="experience-section">
+    <h2 class="section-title">Experience</h2>
+    <p class="section-subtitle">My journey in the academic & professional front</p>
+
+    <div class="experience-toggle">
+      <button id="academicBtn" class="toggle-btn active">🎓 Academic</button>
+      <button id="professionalBtn" class="toggle-btn">💼 Professional</button>
+    </div>
+
+    <!-- Academic Timeline -->
+    <div id="academicTimeline" class="timeline show">
+      <div class="timeline-item">
+        <h3>University of East Anglia</h3>
+        <p>MSc Artificial Intelligence</p>
+        <span>📅 Sep 2025 – Sep 2026 (Expected)</span>
+        <p>Pursuing a Master's degree in AI, focused on advanced machine learning, ethical AI, and real-world applications across healthcare, finance, and automation.</p>
+        <p><strong>Planned Areas of Study:</strong> Deep Learning, NLP, Reinforcement Learning, AI Ethics, Advanced Data Analytics</p>
+        <p><strong>Goals:</strong> Research driven learning, industrial placement, and building high-impact AI systems.</p>
+      </div>
+      
+      <div class="timeline-item">
+        <h3>University of East Anglia</h3>
+        <p>BSc Hons Computing Sciences with a Year in Industry</p>
+        <span>📅 2022 – Jun 2025</span>
+        <p><strong>Activities:</strong> Basketball, Swimming & Water Polo</p>
+        <p><strong>Skills:</strong> Software Development, Project Management, Programming, Web Development, Computer Science, Mathematics</p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>American University of Beirut (AUB)</h3>
+        <p>3-Credit Course Recognition – Data Science</p>
+        <span>📅 Jan 2024 – Feb 2024</span>
+        <p>Completed a Data Science learning path equivalent to a 3-credit graduate-level course at AUB.</p>
+        <p><strong>Skills:</strong> Data Science, Analytics, Statistical Analysis, Mathematics</p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>Hinchley Wood Sixth Form</h3>
+        <p>A Levels: Business, Computer Science, Physics</p>
+        <span>📅 Sep 2020 – Jun 2022</span>
+      </div>
+    </div>
+
+    <!-- Professional Timeline -->
+    <div id="professionalTimeline" class="timeline">
+      <div class="timeline-item">
+        <h3>Interactive Segmentation Tool Developer (Intern)</h3>
+        <p>University of East Anglia — School of Computing Sciences</p>
+        <span>📅 Summer 2023</span>
+        <p>Contributed to an EPSRC research project building a semi-automated GUI for labeling medical X-ray image segmentation data using pre-trained deep learning models. Enhanced skills in Python, computer vision, and model adaptation. Developed an interactive interface and validated segmentation outputs for research-grade accuracy.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills-section">
+    <h2 class="section-title">Skills</h2>
+    <p class="section-subtitle">My technical & other skills</p>
+
+    <div class="skills-grid">
+      <div class="skill-box" onclick="toggleSkill(this)">
+        <div class="skill-header">
+          <span class="icon">🧠</span>
+          <div>
+            <h3>Data Science & AI</h3>
+            <p>4+ Years Experience</p>
+          </div>
+          <span class="arrow">▾</span>
+        </div>
+        <ul class="skill-list">
+          <li>Python & Libraries (Pandas, NumPy, Matplotlib)</li>
+          <li>TensorFlow / PyTorch</li>
+          <li>Scikit-learn & Machine Learning</li>
+          <li>Computer Vision & Image Processing</li>
+          <li>Natural Language Processing</li>
+          <li>Statistical Analysis & Data Visualization</li>
+        </ul>
+      </div>
+
+      <div class="skill-box" onclick="toggleSkill(this)">
+        <div class="skill-header">
+          <span class="icon">💻</span>
+          <div>
+            <h3>Programming Languages</h3>
+            <p>8+ Years Experience</p>
+          </div>
+          <span class="arrow">▾</span>
+        </div>
+        <ul class="skill-list">
+          <li>Python (Advanced)</li>
+          <li>C++ (Intermediate)</li>
+          <li>JavaScript (Intermediate)</li>
+          <li>SQL & Database Management</li>
+          <li>R for Statistical Computing</li>
+          <li>MATLAB</li>
+        </ul>
+      </div>
+
+      <div class="skill-box" onclick="toggleSkill(this)">
+        <div class="skill-header">
+          <span class="icon">🎨</span>
+          <div>
+            <h3>Front End Development</h3>
+            <p>2+ Years Experience</p>
+          </div>
+          <span class="arrow">▾</span>
+        </div>
+        <ul class="skill-list">
+          <li>HTML5 & CSS3</li>
+          <li>JavaScript & ES6+</li>
+          <li>React & Modern Frameworks</li>
+          <li>Tailwind CSS</li>
+          <li>Responsive Web Design</li>
+          <li>Animations (AOS, GSAP)</li>
+        </ul>
+      </div>
+
+      <div class="skill-box" onclick="toggleSkill(this)">
+        <div class="skill-header">
+          <span class="icon">🛠️</span>
+          <div>
+            <h3>Tools & Technologies</h3>
+            <p>3+ Years Experience</p>
+          </div>
+          <span class="arrow">▾</span>
+        </div>
+        <ul class="skill-list">
+          <li>Git & Version Control</li>
+          <li>Docker & Containerization</li>
+          <li>Jupyter Notebooks</li>
+          <li>Linux & Command Line</li>
+          <li>REST APIs & Web Services</li>
+          <li>Cloud Platforms (AWS, Google Cloud)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects-section">
+    <h2 class="section-title">Featured Projects</h2>
+    <p class="section-subtitle">A selection of my best work in AI and Development</p>
+
+    <div class="carousel">
+        <button class="nav prev" onclick="prevSlide()">❮</button>
+
+        <div class="carousel-track" id="carouselTrack">
+
+            <div class="project-slide">
+                <img src="Assets/OCRODIA.png" alt="Odia Character Recognition Project" />
+                <div class="project-details">
+                    <h3>Deep Learning for OCR</h3>
+                    <p>
+                        A dissertation project to build a high-accuracy OCR system for the low-resource Odia script. Achieved 84% test accuracy by combining a Convolutional Neural Network (CNN) with transfer learning and a custom-built GUI for data augmentation.
+                    </p>
+                    <div class="meta">
+                        <a href="https://github.com/John-W-Callaghan/Odia-OCR-Project" target="_blank">View on GitHub</a>
+                    </div>
+                    <a href="Projects/project15.html" class="btn">View Details →</a>
+                </div>
+            </div>
+
+            <div class="project-slide">
+                <img src="assets/train.png" alt="Intelligent Chatbot Project" />
+                <div class="project-details">
+                    <h3>Intelligent Chatbot for Train Services</h3>
+                    <p>
+                        A conversational AI that finds the cheapest train tickets via web scraping and predicts train delays using a Random Forest model. The delay predictor achieved a Mean Absolute Error of just 0.34 minutes.
+                    </p>
+                    <div class="meta">
+                        <a href="https://github.com/John-W-Callaghan/Train-Chatbot" target="_blank">View on GitHub</a>
+                    </div>
+                    <a href="Projects/project-chatbot.html" class="btn">View Details →</a>
+                </div>
+            </div>
+
+            <div class="project-slide">
+                <img src="assets/securewebbased.png" alt="Secure Blog Project" />
+                <div class="project-details">
+                    <h3>Secure Web-Based Blog</h3>
+                    <p>
+                        Developed a secure blog system using Node.js and PostgreSQL. Implemented robust security measures to mitigate the top 5 common vulnerabilities, including SQL Injection, XSS, and session hijacking.
+                    </p>
+                    <div class="meta">
+                        <a href="https://github.com/John-W-Callaghan/Secure-Blog" target="_blank">View on GitHub</a>
+                    </div>
+                    <a href="Projects/project-secure-blog.html" class="btn">View Details →</a>
+                </div>
+            </div>
+
+            <div class="project-slide">
+              <img src="assets/gamesearch engine.png" alt="Video Game Search Engine" />
+              <div class="project-details">
+                <h3>Video Game Search Engine</h3>
+                <p>
+                  A custom search engine built for video game HTML datasets using TF-IDF and cosine similarity. The project includes query expansion with WordNet, tokenization, lemmatization, and a search interface that returns the most relevant results.
+                </p>
+                <div class="meta">
+                  <a href="https://github.com/John-W-Callaghan/Videogame-Search-engine" target="_blank">View on GitHub</a>
+                </div>
+                <a href="Projects/project1.html" class="btn">View Details →</a>
+              </div>
+            </div>
+            
+        </div>
+
+        <button class="nav next" onclick="nextSlide()">❯</button>
+    </div>
+
+    <a href="projects.html" class="btn outline all-projects">See All Projects</a>
+</section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <h2 class="section-title">Contact</h2>
+    <p class="section-subtitle">Get in touch with me</p>
+
+    <div class="contact-container">
+      <div class="contact-item">
+        <span class="icon">📧</span>
+        <div>
+          <h3>Email</h3>
+          <p>johnwiam@icloud.com</p>
+          <a href="mailto:johnwiam@icloud.com" class="contact-link">Send a message</a>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <span class="icon">📍</span>
+        <div>
+          <h3>Location</h3>
+          <p>London, United Kingdom</p>
+          <p class="contact-secondary">Available for remote work</p>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <span class="icon">💼</span>
+        <div>
+          <h3>LinkedIn</h3>
+          <p>Connect with me professionally</p>
+          <a href="https://www.linkedin.com/in/john-callaghan-35816b269" target="_blank" class="contact-link">View profile</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <h2 class="footer-logo">John</h2>
+
+      <nav class="footer-nav">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="social-icons">
+        <a href="https://github.com/John-W-Callaghan" target="_blank" aria-label="GitHub">
+          <img src="Assets/github.png" alt="GitHub" />
+        </a>
+        <a href="https://www.linkedin.com/in/john-callaghan-35816b269" target="_blank" aria-label="LinkedIn">
+          <img src="Assets/Linkedin.png" alt="LinkedIn" />
+        </a>
+      </div>
+    </div>
+
+    <p class="footer-copy">© John Callaghan 2025</p>
+
+    <a href="#home" class="scroll-top" aria-label="Scroll to top">↑</a>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Smooth Scroll Behavior
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    // Mobile Navigation Toggle
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+    });
+
+    // Skills Toggle
+    function toggleSkill(box) {
+      box.classList.toggle('active');
+    }
+
+    // Experience Timeline Toggle
+    const academicBtn = document.getElementById('academicBtn');
+    const professionalBtn = document.getElementById('professionalBtn');
+    const academicTimeline = document.getElementById('academicTimeline');
+    const professionalTimeline = document.getElementById('professionalTimeline');
+
+    academicBtn.addEventListener('click', () => {
+      academicBtn.classList.add('active');
+      professionalBtn.classList.remove('active');
+      academicTimeline.classList.add('show');
+      professionalTimeline.classList.remove('show');
+    });
+
+    professionalBtn.addEventListener('click', () => {
+      professionalBtn.classList.add('active');
+      academicBtn.classList.remove('active');
+      professionalTimeline.classList.add('show');
+      academicTimeline.classList.remove('show');
+    });
+
+    // Carousel Functionality
+    let currentSlide = 0;
+    const track = document.getElementById("carouselTrack");
+    const totalSlides = track.children.length;
+
+    function updateCarousel() {
+      const slideWidth = track.children[0].offsetWidth;
+      track.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+    }
+
+    function nextSlide() {
+      currentSlide = (currentSlide + 1) % totalSlides;
+      updateCarousel();
+    }
+
+    function prevSlide() {
+      currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+      updateCarousel();
+    }
+
+    window.addEventListener("resize", updateCarousel);
+  </script>
+</body>
+</html>
