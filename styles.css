@@ -113,11 +113,12 @@ body {
 }
 
 .nav-links {
-  list-style: none;
-  display: flex;
-  gap: 2rem;
-  margin: 0;
-  padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center; /* This is the line that fixes the alignment */
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-links a {
@@ -562,28 +563,35 @@ body {
   color: var(--text-light);
   position: relative;
 }
+/* --- REPLACE the old .toggle-btn and .toggle-btn.active rules with this --- */
 
-.toggle-btn::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+.toggle-btn {
+  padding: 12px 24px;
+  border: 1px solid #e2e8f0; /* Add a subtle border */
+  background: var(--bg-white); /* Give it a solid background */
   border-radius: var(--border-radius-md);
-  opacity: 0;
+  font-weight: 600;
+  cursor: pointer;
   transition: all var(--transition-normal);
-  z-index: -1;
+  color: var(--text-secondary); /* Use a darker text color for visibility */
 }
 
-.toggle-btn.active::before {
-  opacity: 1;
+/* Add a hover effect for better user experience */
+.toggle-btn:not(.active):hover {
+    background: var(--bg-lighter);
+    transform: translateY(-2px);
 }
 
 .toggle-btn.active {
-  color: white;
+  background: var(--primary-color); /* Use a solid primary color */
+  color: white; /* High-contrast white text */
+  border-color: var(--primary-color);
+  /* Add a "glow" to make it stand out more */
+  box-shadow: 0 4px 14px rgba(99, 102, 241, 0.35);
+  transform: translateY(-2px);
 }
+
+
 
 .timeline {
   display: none;
@@ -912,12 +920,13 @@ body {
   transform: translateY(-50%) scale(1.1);
 }
 
+/* This is the NEW, corrected code */
 .nav.prev {
-  left: -30px;
+  left: 20px; 
 }
 
 .nav.next {
-  right: -30px;
+  right: 20px;
 }
 
 /* Enhanced Contact Section */

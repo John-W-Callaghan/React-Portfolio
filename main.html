@@ -36,7 +36,7 @@
       </div>
     </div>
     <div class="hero-image">
-      <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face" alt="John's profile" />
+      <img src="assets/profile.png" alt="John's profile" />
     </div>
   </section>
 
@@ -47,7 +47,7 @@
 
     <div class="about-content">
       <div class="about-image">
-        <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=400&h=500&fit=crop&crop=face" alt="Profile Photo" />
+        <img src="assets/img2.png" alt="Profile Photo" />
       </div>
 
       <div class="about-text">
@@ -209,69 +209,78 @@
     </div>
   </section>
 
-  <!-- Projects Section -->
   <section id="projects" class="projects-section">
-    <h2 class="section-title">Projects</h2>
-    <p class="section-subtitle">My independent projects & contributions</p>
+    <h2 class="section-title">Featured Projects</h2>
+    <p class="section-subtitle">A selection of my best work in AI and Development</p>
 
     <div class="carousel">
-      <button class="nav prev" onclick="prevSlide()">❮</button>
+        <button class="nav prev" onclick="prevSlide()">❮</button>
 
-      <div class="carousel-track" id="carouselTrack">
-        <div class="project-slide">
-          <img src="Assets/search-engine.png" alt="Video Game Search Engine" />
-          <div class="project-details">
-            <h3>Video Game Search Engine</h3>
-            <p>
-              A custom search engine built for video game HTML datasets using TF-IDF and cosine similarity. The project includes query expansion with WordNet, tokenization, lemmatization, and a search interface that returns the most relevant results.
-            </p>
-            <div class="meta">
-              ⭐ 100+ • <a href="https://github.com/your/video-search-engine" target="_blank">GitHub</a>
+        <div class="carousel-track" id="carouselTrack">
+
+            <div class="project-slide">
+                <img src="Assets/ocr-project.png" alt="Odia Character Recognition Project" />
+                <div class="project-details">
+                    <h3>Deep Learning for OCR</h3>
+                    <p>
+                        A dissertation project to build a high-accuracy OCR system for the low-resource Odia script. Achieved 84% test accuracy by combining a Convolutional Neural Network (CNN) with transfer learning and a custom-built GUI for data augmentation.
+                    </p>
+                    <div class="meta">
+                        <a href="https://github.com/John-W-Callaghan/Odia-OCR-Project" target="_blank">View on GitHub</a>
+                    </div>
+                    <a href="Projects/project15.html" class="btn">View Details →</a>
+                </div>
             </div>
-            <a href="Projects/project1.html" class="btn">View Details →</a>
-          </div>
+
+            <div class="project-slide">
+                <img src="Assets/chatbot-project.png" alt="Intelligent Chatbot Project" />
+                <div class="project-details">
+                    <h3>Intelligent Chatbot for Train Services</h3>
+                    <p>
+                        A conversational AI that finds the cheapest train tickets via web scraping and predicts train delays using a Random Forest model. The delay predictor achieved a Mean Absolute Error of just 0.34 minutes.
+                    </p>
+                    <div class="meta">
+                        <a href="https://github.com/John-W-Callaghan/Train-Chatbot" target="_blank">View on GitHub</a>
+                    </div>
+                    <a href="Projects/project-chatbot.html" class="btn">View Details →</a>
+                </div>
+            </div>
+
+            <div class="project-slide">
+                <img src="Assets/secure-blog-project.png" alt="Secure Blog Project" />
+                <div class="project-details">
+                    <h3>Secure Web-Based Blog</h3>
+                    <p>
+                        Developed a secure blog system using Node.js and PostgreSQL. Implemented robust security measures to mitigate the top 5 common vulnerabilities, including SQL Injection, XSS, and session hijacking.
+                    </p>
+                    <div class="meta">
+                        <a href="https://github.com/John-W-Callaghan/Secure-Blog" target="_blank">View on GitHub</a>
+                    </div>
+                    <a href="Projects/project-secure-blog.html" class="btn">View Details →</a>
+                </div>
+            </div>
+
+            <div class="project-slide">
+              <img src="Assets/search-engine.png" alt="Video Game Search Engine" />
+              <div class="project-details">
+                <h3>Video Game Search Engine</h3>
+                <p>
+                  A custom search engine built for video game HTML datasets using TF-IDF and cosine similarity. The project includes query expansion with WordNet, tokenization, lemmatization, and a search interface that returns the most relevant results.
+                </p>
+                <div class="meta">
+                  <a href="https://github.com/John-W-Callaghan/Videogame-Search-engine" target="_blank">View on GitHub</a>
+                </div>
+                <a href="Projects/project1.html" class="btn">View Details →</a>
+              </div>
+            </div>
+            
         </div>
 
-        <div class="project-slide">
-          <img src="Assets/emotion-predictor.png" alt="Emotion Prediction App" />
-          <div class="project-details">
-            <h3>Emotion Prediction from Text</h3>
-            <p>
-              Built an NLP model with logistic regression to classify emotions like joy, sadness, and anger. Includes data preprocessing, CountVectorizer feature extraction, and a Tkinter GUI that displays real-time predictions.
-            </p>
-            <div class="meta">
-              ⭐ 120+ • <a href="https://github.com/your/emotion-predictor" target="_blank">GitHub</a>
-            </div>
-            <a href="Projects/project2.html" class="btn">View Details →</a>
-          </div>
-        </div>
-
-        <div class="project-slide">
-          <img src="Assets/images.png" alt="FreeCodeCamp Projects" />
-          <div class="project-details">
-            <h3>FreeCodeCamp Project Collection</h3>
-            <p>
-              A series of five Python projects showcasing practical programming skills:
-              <br><br>
-              🔹 <strong>Arithmetic Formatter</strong>: Aligns and formats math problems with validation.<br>
-              🔹 <strong>Budget App</strong>: Tracks spending and visualizes it via ASCII charts.<br>
-              🔹 <strong>Polygon Area Calculator</strong>: Uses OOP to model and compute geometric shapes.<br>
-              🔹 <strong>Probability Calculator</strong>: Simulates drawing balls from a hat to estimate probability.<br>
-              🔹 <strong>Time Calculator</strong>: Adds time with support for AM/PM and day transitions.
-            </p>
-            <div class="meta">
-              ⭐ 95+ • <a href="https://github.com/John-W-Callaghan" target="_blank">GitHub</a>
-            </div>
-            <a href="Projects/project16.html" class="btn">View Details →</a>
-          </div>
-        </div>
-      </div>
-
-      <button class="nav next" onclick="nextSlide()">❯</button>
+        <button class="nav next" onclick="nextSlide()">❯</button>
     </div>
 
     <a href="projects.html" class="btn outline all-projects">See All Projects</a>
-  </section>
+</section>
 
   <!-- Contact Section -->
   <section id="contact" class="contact-section">

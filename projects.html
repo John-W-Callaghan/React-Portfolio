@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="projects.css">
+    <title>Projects - John Callaghan</title>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">John</div>
+        <ul class="nav-links" id="mainNavLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html" class="active">Projects</a></li>
+            <li><a href="cv.html">CV</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger">☰</button>
+    </nav>
+
+    <header class="page-title-banner">
+        <h1>All Projects</h1>
+        <p>A complete collection of my work in AI, Security, and Development</p>
+    </header>
+
+    <div class="search-container">
+        <input type="text" id="searchBar" placeholder="Search projects..." onkeyup="filterProjects()">
+    </div>
+
+    <section class="projects-grid-container">
+        <div class="project-accordion">
+
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    Artificial Intelligence & Machine Learning
+                    <span class="accordion-icon">▾</span>
+                </button>
+                <div class="accordion-content">
+                    <div class="project-card-grid">
+                        <div class="project-card">
+                            <img src="Assets/ocr-project.png" alt="Odia OCR Project">
+                            <h3>Deep Learning for OCR</h3>
+                            <p>A dissertation project achieving 84% accuracy in recognizing handwritten Odia characters using a CNN and Transfer Learning.</p>
+                            <button class="btn" data-project-id="odia-ocr">View Details →</button>
+                        </div>
+                        <div class="project-card">
+                            <img src="Assets/chatbot-project.png" alt="Intelligent Chatbot Project">
+                            <h3>Intelligent Chatbot</h3>
+                            <p>A conversational AI to find train tickets via web scraping and predict delays using a Random Forest model with a 0.34 min MAE.</p>
+                            <button class="btn" data-project-id="chatbot">View Details →</button>
+                        </div>
+                        <div class="project-card">
+                            <img src="Assets/emotion-predictor.png" alt="Emotion Prediction App">
+                            <h3>Emotion Prediction from Text</h3>
+                            <p>An NLP model using logistic regression to classify emotions from text, complete with a Tkinter GUI for real-time predictions.</p>
+                            <button class="btn" data-project-id="emotion-pred">View Details →</button>
+                        </div>
+                        <div class="project-card">
+                            <img src="Assets/EVACLA.PNG" alt="MNIST Classifier Project">
+                            <h3>MNIST Classifier Analysis</h3>
+                            <p>An evaluation of Random Forest, K-NN, and SVM on the MNIST dataset using 5-fold cross-validation and hyperparameter tuning.</p>
+                            <button class="btn" data-project-id="mnist">View Details →</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    Web Development & Security
+                    <span class="accordion-icon">▾</span>
+                </button>
+                <div class="accordion-content">
+                    <div class="project-card-grid">
+                        <div class="project-card">
+                            <img src="Assets/secure-blog-project.png" alt="Secure Blog Project">
+                            <h3>Secure Web-Based Blog</h3>
+                            <p>Developed a blog with Node.js and PostgreSQL, implementing mitigations for the top 5 common security vulnerabilities.</p>
+                            <button class="btn" data-project-id="secure-blog">View Details →</button>
+                        </div>
+                        <div class="project-card">
+                            <img src="Assets/Website.png" alt="Portfolio Website">
+                            <h3>Portfolio Website</h3>
+                            <p>My personal portfolio, built from scratch using HTML, CSS, and JavaScript with a focus on responsive design.</p>
+                            <button class="btn" data-project-id="portfolio">View Details →</button>
+                        </div>
+                        <div class="project-card">
+                            <img src="Assets/search-engine.png" alt="Video Game Search Engine">
+                            <h3>Video Game Search Engine</h3>
+                            <p>A search engine for HTML datasets using TF-IDF and cosine similarity, with query expansion via WordNet.</p>
+                            <button class="btn" data-project-id="search-engine">View Details →</button>
+                        </div>
+                        <div class="project-card">
+                            <img src="Assets/CYBER.jpeg" alt="Cybersecurity Report">
+                            <h3>Cybersecurity Policies Report</h3>
+                            <p>A formal report exploring the critical role and implementation of security policies in modern organizations.</p>
+                            <button class="btn" data-project-id="cyber-report">View Details →</button>
+                        </div>
+                        <div class="project-card">
+                            <img src="Assets/parking-system.png" alt="Parking Management System">
+                            <h3>Parking Management System</h3>
+                            <p>A full-stack digital car parking system using Node.js and PostgreSQL to revolutionize the parking experience through online booking and navigation.</p>
+                            <button class="btn" data-project-id="parking-system">View Details →</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    Data Analysis & Visualization
+                    <span class="accordion-icon">▾</span>
+                </button>
+                <div class="accordion-content">
+                    <div class="project-card-grid">
+                        <div class="project-card">
+                            <img src="Assets/medical-data.png" alt="Medical Data Visualizer">
+                            <h3>Medical Data Visualizer</h3>
+                            <p>Used Pandas, Seaborn, and Matplotlib to create categorical plots and a correlation heatmap from medical exam data.</p>
+                            <button class="btn" data-project-id="med-viz">View Details →</button>
+                        </div>
+                        <div class="project-card">
+                            <img src="Assets/sea-level.png" alt="Sea Level Rise Visualizer">
+                            <h3>Sea Level Rise Visualizer</h3>
+                            <p>Plotted historical sea level data and forecasted future trends to 2050 using linear regression with SciPy.</p>
+                            <button class="btn" data-project-id="sea-level">View Details →</button>
+                        </div>
+                        <div class="project-card">
+                            <img src="Assets/page-views.png" alt="Page Views Analyzer">
+                            <h3>Page Views Time Series</h3>
+                            <p>Cleaned and visualized forum page view data using line plots, bar plots, and box plots to identify trends and seasonality.</p>
+                            <button class="btn" data-project-id="page-views">View Details →</button>
+                        </div>
+                        <div class="project-card">
+                            <img src="Assets/demographic-data.png" alt="Demographic Data Analyzer">
+                            <h3>Demographic Data Analyzer</h3>
+                            <p>Used Pandas to load a CSV and analyze a demographic dataset to answer specific statistical questions.</p>
+                            <button class="btn" data-project-id="demo-analysis">View Details →</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    Python & Scientific Computing 
+                    <span class="accordion-icon">▾</span>
+                </button>
+                <div class="accordion-content">
+                    <div class="project-card-grid">
+                        <div class="project-card">
+                            <img src="Assets/arithmetic.png" alt="Arithmetic Formatter">
+                            <h3>Arithmetic Formatter</h3>
+                            <p>A Python function to neatly format and arrange arithmetic problems in a visually appealing way.</p>
+                            <button class="btn" data-project-id="arithmetic">View Details →</button>
+                        </div>
+                        <div class="project-card">
+                            <img src="Assets/time-calculator.png" alt="Time Calculator">
+                            <h3>Time Calculator</h3>
+                            <p>A function to add durations to a start time, correctly handling AM/PM changes and weekday transitions.</p>
+                            <button class="btn" data-project-id="time-calc">View Details →</button>
+                        </div>
+                        <div class="project-card">
+                            <img src="Assets/budget-app.png" alt="Budget App">
+                            <h3>Budget App</h3>
+                            <p>An object-oriented Python app for managing budgets and visualizing spending with a text-based chart.</p>
+                            <button class="btn" data-project-id="budget-app">View Details →</button>
+                        </div>
+                        <div class="project-card">
+                            <img src="Assets/polygon-calculator.png" alt="Polygon Area Calculator">
+                            <h3>Polygon Area Calculator</h3>
+                            <p>An object-oriented program to calculate properties of rectangles and squares, demonstrating class inheritance.</p>
+                            <button class="btn" data-project-id="poly-calc">View Details →</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close-button">&times;</span>
+            <img id="modalImage" src="" alt="Project Image" class="modal-project-image">
+            <h2 id="modalTitle">Project Title</h2>
+            <div id="modalDescription">
+                <p>Project description goes here.</p>
+            </div>
+            <div id="modalTech"></div>
+            <a id="modalGithubLink" href="#" target="_blank" class="btn">View on GitHub</a>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <h2 class="footer-logo">John</h2>
+            <nav class="footer-nav">
+                <a href="index.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="cv.html">CV</a>
+            </nav>
+            <div class="social-icons">
+                <a href="https://github.com/John-W-Callaghan" target="_blank" aria-label="GitHub"><img src="Assets/github.png" alt="GitHub" /></a>
+                <a href="https://www.linkedin.com/in/john-callaghan-35816b269" target="_blank" aria-label="LinkedIn"><img src="Assets/Linkedin.png" alt="LinkedIn" /></a>
+            </div>
+        </div>
+        <p class="footer-copy">© John Callaghan 2025</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            
+            const projectData = {
+                // AI & ML Projects
+                'odia-ocr': {
+                    title: 'Deep Learning for OCR',
+                    image: 'Assets/ocr-project.png',
+                    description: `<p>This dissertation project focused on building a high-accuracy OCR system for the low-resource Odia script. The core challenge was the severe lack of available data.</p><p>By implementing a Convolutional Neural Network (CNN) and leveraging Transfer Learning from a pre-trained Bengali model, the system overcame data scarcity. A custom GUI was also developed to augment the dataset, which was crucial in boosting the final test accuracy to <strong>84.0%</strong>.</p>`,
+                    technologies: ['Python', 'TensorFlow', 'Keras', 'Tkinter', 'Deep Learning', 'Pandas'],
+                    github: 'https://github.com/John-W-Callaghan/Odia-OCR-Project'
+                },
+                'chatbot': {
+                    title: 'Intelligent Chatbot for Train Services',
+                    image: 'Assets/chatbot-project.png',
+                    description: `<p>A group project to build a conversational AI for a train company. The chatbot helps users find the cheapest tickets by scraping the National Rail website and predicts train delays using a machine learning model.</p><p>The final Random Forest model achieved a Mean Absolute Error of just <strong>0.34 minutes</strong>, providing highly accurate real-time delay estimates.</p>`,
+                    technologies: ['Python', 'Scikit-learn', 'Selenium', 'spaCy', 'Tkinter', 'SQLite'],
+                    github: 'https://github.com/John-W-Callaghan/Train-Chatbot'
+                },
+                'emotion-pred': {
+                    title: 'Emotion Prediction from Text',
+                    image: 'Assets/emotion-predictor.png',
+                    description: `<p>This project uses Natural Language Processing (NLP) to predict emotions from text. A user interface was built for emotion prediction using logistic regression.</p><p>The process involved tokenization, vectorization with CountVectorizer, training a Logistic Regression model, and building an interactive GUI with Tkinter to show real-time predictions.</p>`,
+                    technologies: ['Python', 'Scikit-learn', 'NLTK', 'Tkinter', 'NLP'],
+                    github: 'https://github.com/John-W-Callaghan/Emotion-Predictor'
+                },
+                'mnist': {
+                    title: 'MNIST Classifier Analysis',
+                    image: 'Assets/EVACLA.PNG',
+                    description: `<p>This project evaluates the performance of three supervised learning algorithms—Random Forest, K-Nearest Neighbors (K-NN), and Support Vector Machines (SVM)—on the MNIST dataset of handwritten digits.</p><p>The methodology involved using 5-fold cross-validation and hyperparameter tuning to optimize and compare the effectiveness of each classifier.</p>`,
+                    technologies: ['Python', 'Scikit-learn', 'Random Forest', 'K-NN', 'SVM'],
+                    github: 'https://github.com/John-W-Callaghan/MNIST-Classifier-Analysis'
+                },
+                // Web Dev & Security Projects
+                'secure-blog': {
+                    title: 'Secure Web-Based Blog',
+                    image: 'Assets/secure-blog-project.png',
+                    description: `<p>Developed a full-stack blog application with a strong focus on security. The project required implementing defensive coding practices to protect against the top 5 most common web vulnerabilities.</p><p>Mitigations for SQL Injection, Cross-Site Scripting (XSS), Cross-Site Request Forgery (CSRF), session hijacking, and account enumeration were successfully implemented and demonstrated.</p>`,
+                    technologies: ['Node.js', 'PostgreSQL', 'JavaScript', 'Cybersecurity'],
+                    github: 'https://github.com/John-W-Callaghan/Secure-Blog'
+                },
+                'portfolio': {
+                    title: 'Portfolio Website',
+                    image: 'Assets/Website.png',
+                    description: `<p>A custom portfolio website built from the ground up to showcase my skills, projects, and achievements. The site is built with a user-friendly navigation system and features a responsive design to work across all devices.</p><p>An animated particle background was implemented with JavaScript to create a more dynamic and engaging user experience.</p>`,
+                    technologies: ['HTML', 'CSS', 'JavaScript'],
+                    github: 'https://github.com/John-W-Callaghan/Portfolio'
+                },
+                'search-engine': {
+                    title: 'Video Game Search Engine',
+                    image: 'Assets/search-engine.png',
+                    description: `<p>This project involved building a custom search engine for video games, using HTML files as the dataset. The process covered several steps, from extracting data to implementing TF-IDF for handling search queries.</p><p>The engine uses BeautifulSoup to parse HTML, NLTK WordNet for query expansion, and Scikit-learn's TfidfVectorizer for ranking results based on cosine similarity.</p>`,
+                    technologies: ['Python', 'Scikit-learn', 'BeautifulSoup', 'NLTK'],
+                    github: 'https://github.com/John-W-Callaghan/Videogame-Search-engine'
+                },
+                'cyber-report': {
+                    title: 'Cybersecurity Policies Report',
+                    image: 'Assets/CYBER.jpeg',
+                    description: `<p>A formal research report exploring the crucial role and importance of security policies within modern organizations.</p><p>The report covers why security policies are essential for defending against cyber threats, ensuring compliance, and guiding employees in maintaining a secure working environment. It also discusses various security frameworks and best practices for their implementation.</p>`,
+                    technologies: ['Research', 'Technical Writing', 'Cybersecurity'],
+                    github: 'https://github.com/John-W-Callaghan/Portfolio'
+                },
+                // Add this new object inside your 'projectData' constant
+                'parking-system': {
+                    title: 'Parking Management System',
+                    image: 'Assets/parking-system.png',
+                    description: `<p>A cutting-edge digital car parking system designed to eliminate the hassle of searching for a parking spot. This full-stack application allows users to book parking spaces in advance.</p><p>The system is built with a modern technology stack, including Node.js for the backend, PostgreSQL for the database, and Docker for containerization, ensuring a scalable and maintainable architecture.</p>`,
+                    technologies: ['Node.js', 'PostgreSQL', 'Docker', 'JavaScript', 'Pug'],
+                    github: 'https://github.com/Anthony-de-cruz/Parking-Management-System'
+                },
+                // Data Analysis & Visualization Projects
+                'med-viz': {
+                    title: 'Medical Data Visualizer',
+                    image: 'Assets/medical-data.png',
+                    description: '<p>This project demonstrates advanced data preprocessing and visualization techniques using medical examination data, leveraging pandas, seaborn, and matplotlib to create insightful visualizations including categorical plots and a correlation heatmap.</p>',
+                    technologies: ['Python', 'Pandas', 'Matplotlib', 'Seaborn'],
+                    github: 'https://github.com/John-W-Callaghan/Data-Analysis-Projects'
+                },
+                'sea-level': {
+                    title: 'Sea Level Rise Visualizer',
+                    image: 'Assets/sea-level.png',
+                    description: '<p>This project creates a comprehensive visualization of sea level rise by plotting historical data and forecasting future trends to 2050 using linear regression analysis with Python libraries like Pandas, Matplotlib, and SciPy.</p>',
+                    technologies: ['Python', 'Pandas', 'Matplotlib', 'SciPy'],
+                    github: 'https://github.com/John-W-Callaghan/Data-Analysis-Projects'
+                },
+                'page-views': {
+                    title: 'Page Views Time Series Analyzer',
+                    image: 'Assets/page-views.png',
+                    description: '<p>This data visualization project focuses on analyzing the page views of the FreeCodeCamp forum. The project demonstrates data cleaning by removing outliers and creating line plots, bar plots, and box plots to identify trends and seasonality.</p>',
+                    technologies: ['Python', 'Pandas', 'Matplotlib', 'Seaborn'],
+                    github: 'https://github.com/John-W-Callaghan/Data-Analysis-Projects'
+                },
+                'demo-analysis': {
+                    title: 'Demographic Data Analyzer',
+                    image: 'Assets/demographic-data.png',
+                    description: '<p>This project features a comprehensive function that performs in-depth analysis on a demographic dataset using pandas, extracting various insights like race representation, education levels, and earnings statistics.</p>',
+                    technologies: ['Python', 'Pandas', 'NumPy'],
+                    github: 'https://github.com/John-W-Callaghan/Data-Analysis-Projects'
+                },
+                // Python & Scientific Computing
+                'arithmetic': {
+                    title: 'Arithmetic Formatter',
+                    image: 'Assets/arithmetic.png',
+                    description: '<p>A Python function to neatly format and arrange multiple arithmetic problems in a visually appealing way, with robust error handling for input validation.</p>',
+                    technologies: ['Python', 'String Manipulation'],
+                    github: 'https://github.com/John-W-Callaghan/Scientific-Computing-Projects'
+                },
+                'time-calc': {
+                    title: 'Time Calculator',
+                    image: 'Assets/time-calculator.png',
+                    description: '<p>A function to add a given duration to a start time, correctly handling complex scenarios like AM/PM transitions and changes in the day of the week.</p>',
+                    technologies: ['Python', 'Time Calculation'],
+                    github: 'https://github.com/John-W-Callaghan/Scientific-Computing-Projects'
+                },
+                'budget-app': {
+                    title: 'Budget App',
+                    image: 'Assets/budget-app.png',
+                    description: '<p>An object-oriented Python app for managing budgets across different categories. It includes methods for deposits, withdrawals, transfers, and a function to visualize spending in a text-based bar chart.</p>',
+                    technologies: ['Python', 'OOP'],
+                    github: 'https://github.com/John-W-Callaghan/Scientific-Computing-Projects'
+                },
+                'poly-calc': {
+                    title: 'Polygon Area Calculator',
+                    image: 'Assets/polygon-calculator.png',
+                    description: '<p>An object-oriented program that uses a Rectangle class and an inherited Square class to calculate properties like area, perimeter, and diagonal, demonstrating key OOP principles.</p>',
+                    technologies: ['Python', 'OOP', 'Geometry'],
+                    github: 'https://github.com/John-W-Callaghan/Scientific-Computing-Projects'
+                }
+            };
+
+            // --- Modal Functionality ---
+            const modal = document.getElementById('projectModal');
+            const modalCloseButton = document.querySelector('.modal-close-button');
+            const modalTitle = document.getElementById('modalTitle');
+            const modalImage = document.getElementById('modalImage');
+            const modalDescription = document.getElementById('modalDescription');
+            const modalTech = document.getElementById('modalTech');
+            const modalGithubLink = document.getElementById('modalGithubLink');
+
+            function openModal(projectId) {
+                const data = projectData[projectId];
+                if (!data) {
+                    console.error('Project data not found for ID:', projectId);
+                    return;
+                }
+
+                modalTitle.textContent = data.title;
+                modalImage.src = data.image;
+                modalDescription.innerHTML = data.description;
+                modalGithubLink.href = data.github;
+
+                modalTech.innerHTML = '';
+                if (data.technologies && data.technologies.length > 0) {
+                    data.technologies.forEach(tech => {
+                        const techTag = document.createElement('span');
+                        techTag.textContent = tech;
+                        modalTech.appendChild(techTag);
+                    });
+                }
+                modal.style.display = 'block';
+            }
+
+            function closeModal() {
+                modal.style.display = 'none';
+            }
+
+            document.querySelectorAll('.project-card .btn').forEach(button => {
+                button.addEventListener('click', () => {
+                    const projectId = button.getAttribute('data-project-id');
+                    openModal(projectId);
+                });
+            });
+
+            if(modalCloseButton) modalCloseButton.addEventListener('click', closeModal);
+
+            window.addEventListener('click', (event) => {
+                if (event.target == modal) {
+                    closeModal();
+                }
+            });
+
+            // --- Accordion Functionality ---
+            const accordionHeaders = document.querySelectorAll('.accordion-header');
+            accordionHeaders.forEach(header => {
+                header.addEventListener('click', () => {
+                    header.classList.toggle('active');
+                    const accordionContent = header.nextElementSibling;
+                    if (accordionContent.style.maxHeight) {
+                        accordionContent.style.maxHeight = null;
+                    } else {
+                        accordionContent.style.maxHeight = accordionContent.scrollHeight + "px";
+                    }
+                });
+            });
+
+            // --- Mobile Nav Hamburger ---
+            const hamburger = document.getElementById('hamburger');
+            const mainNavLinks = document.getElementById('mainNavLinks');
+            if (hamburger && mainNavLinks) {
+                hamburger.addEventListener('click', () => {
+                    mainNavLinks.classList.toggle('open');
+});
+}
+});
+
+// --- Search Filter Function ---
+function filterProjects() {
+    const searchInput = document.getElementById('searchBar').value.toLowerCase();
+    const accordionItems = document.querySelectorAll('.accordion-item');
+
+    accordionItems.forEach(item => {
+        const projects = item.querySelectorAll('.project-card');
+        let hasVisibleProject = false;
+
+        projects.forEach(project => {
+            const title = project.querySelector('h3').innerText.toLowerCase();
+            if (title.includes(searchInput)) {
+                project.style.display = 'flex';
+                hasVisibleProject = true;
+            } else {
+                project.style.display = 'none';
+            }
+        });
+
+        // Show or hide the entire accordion item based on search results
+        if (hasVisibleProject) {
+            item.style.display = 'block';
+        } else {
+            item.style.display = 'none';
+        }
+
+        // If the search bar is empty, show all items
+        if (searchInput === "") {
+            item.style.display = 'block';
+            projects.forEach(project => {
+                project.style.display = 'flex';
+            });
+        }
+    });
+}
+</script>
+
+</body>
+</html>
